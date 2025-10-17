@@ -38,9 +38,14 @@ npm install
 2. 新しいプロジェクトを作成
 3. 「APIとサービス」>「ライブラリ」でGoogle Sheets APIを有効化
 4. 「認証情報」>「認証情報を作成」>「サービスアカウント」を作成
-5. サービスアカウントのキー（JSON）をダウンロードし、`credentials.json`として保存
-6. Googleスプレッドシートを作成し、サービスアカウントのメールアドレスと共有（編集権限）
-7. スプレッドシートのIDをURLからコピー
+5. サービスアカウントのキー（JSON）をダウンロード
+6. サンプルファイルをコピーして編集:
+   ```bash
+   cp credentials.json.example credentials.json
+   ```
+   ダウンロードしたJSONの内容を`credentials.json`に貼り付け
+7. Googleスプレッドシートを作成し、サービスアカウントのメールアドレスと共有（編集権限）
+8. スプレッドシートのIDをURLからコピー
    - URL: `https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/edit`
 
 ### 4. 環境変数の設定
